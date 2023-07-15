@@ -1,0 +1,325 @@
+body{
+    background:rgb(100, 121, 100);
+}
+h1{
+    color: rgb(221, 146, 25);
+    text-align: center;
+}
+.container{
+    height :250px;
+    width: 300px;
+    border: 8px solid rgba(165, 18, 18, 0.382);
+    margin:auto;
+    margin-top: 5%;
+}
+.face{
+    height: 90px;
+    width:140px ;
+    background:rgb(17, 21, 227);
+    margin:auto;
+    margin-top: 9%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 20%;
+    transition :width 1s ease;
+}
+.container:hover .face{ 
+    transform: translateX(20px);
+    animation: face 1s alternate-reverse;
+}
+@keyframes face{
+        0%{
+            transform: translateX(30px);
+            
+        }
+        25%{
+            transform: translateX(-30px);
+            
+        }
+        50%{
+            transform: translateX(20px);
+            
+        }
+        75%{
+            transform: translateX(-20px);
+            
+        }
+        100%{
+            transform: translateX(20px);
+            
+        }
+}
+.eyes{
+    display: flex;
+    width: 80px;
+    justify-content:space-evenly;
+    padding-top: 20%;
+}
+.leye{
+    height:75px ;
+    width: 55px;
+    background:rgba(226, 237, 74, 0.625) ;
+    margin: auto;
+    border-radius: 70%;
+}
+.container:hover .leye{
+    animation: leye 2s infinite;
+}
+@keyframes leye{
+    0%{
+        height: 0px;
+        background: rgb(228, 7, 121);
+    }
+    25%{
+        height: 30px;
+        background: rgb(120, 167, 169);
+    }
+    50%{
+        height: 0px;
+        background: rgba(0, 0, 255, 0.522);
+    }
+    75%{
+        height: 35px;
+        background: rgba(0, 0, 0, 0.489);
+    }
+    100%{
+        height: 0px;
+        background: green;
+    }
+
+}
+.reye{
+    height:65px ;
+    width: 65px;
+    background: rgba(255, 0, 0, 0.244);
+    margin: auto;
+    border-radius: 40%;
+}
+.container:hover .reye{
+    animation: reye 2s infinite;
+}
+@keyframes reye{
+    0%{
+        height: 0px;
+        background: rgba(26, 26, 25, 0.433);
+    }
+    25%{
+        height: 35px;
+        background: rgb(233, 75, 8);
+    }
+    50%{
+        height: 0px;
+        background: rgb(29, 183, 230);
+    }
+    75%{
+        height: 35px;
+        background: rgba(164, 1, 1, 0.855);
+    }
+    100%{
+        height: 0px;
+        background: rgb(126, 174, 5);
+    }
+
+}
+.body{
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 9px;
+}
+.larm{
+    height: 80px;
+    width: 25px;
+    background:rgb(237, 196, 200);
+    border-radius: 30%;
+    margin-top: 15px;
+}
+.container:hover .larm{
+       animation: larm 1s infinite; 
+}
+@keyframes larm{
+    0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+}
+.rarm{
+    height: 85px;
+    width: 23px;
+    background: rgb(13, 13, 78);
+    border-radius: 30%;
+    margin-top: 15px;
+}
+.container:hover .rarm{
+    animation: rarm 1s infinite; 
+}
+@keyframes rarm{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+}
+.center{
+    height: 225px;
+    width: 80px;
+    background: rgba(137, 43, 226, 0.545);
+    border-radius: 60%;
+}
+@keyframes .center{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top :left;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+}
+.container:hover .center{
+    animation: center 1s infinite;
+}
+@keyframes center{
+from{
+     transform: rotate(0deg);
+}
+to{
+    transform: rotate(240deg);
+}
+}
+.legs{
+    display: flex;
+    width: 170px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.lleg{
+    height: 83px;
+    width: 23px;
+    background:rgb(246, 243, 243);
+    border-radius: 30%;
+}
+.container:hover .lleg{
+    animation: lleg 1s infinite;
+}
+@keyframes lleg{
+    0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+}
+
+.rleg{
+    height: 83px;
+    width: 23px;
+    background: rgb(16, 225, 180);
+    border-radius: 30%;
+}
+.container:hover .rleg{
+    animation: rleg 1s infinite;
+}
+@keyframes rleg{
+    0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+}
+@keyframes .center{
+    0%{
+        height: 0px;
+        background: yellow;
+    }
+    25%{
+        height: 35px;
+        background: red;
+    }
+    50%{
+        height: 0px;
+        background: blue;
+    }
+    75%{
+        height: 35px;
+        background: black;
+    }
+    100%{
+        height: 0px;
+        background: green;
+    }
+
+}
